@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 2px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  border: 1px solid #004400;
+  position: relative;
+  cursor: pointer;
+}
+
+.stone {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  border-radius: 50%;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid #444;
+}
+
+#turn {
+  margin: 10px;
+  font-weight: bold;
+}
+
+#resetButton {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
