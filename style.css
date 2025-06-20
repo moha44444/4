@@ -1,10 +1,23 @@
 body {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 h1 {
   margin-bottom: 10px;
+}
+
+#turn {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #board {
@@ -12,7 +25,6 @@ h1 {
   grid-template-columns: repeat(8, 60px);
   grid-template-rows: repeat(8, 60px);
   gap: 2px;
-  margin: 20px auto;
 }
 
 .cell {
@@ -21,7 +33,6 @@ h1 {
   background-color: green;
   border: 1px solid #004400;
   position: relative;
-  cursor: pointer;
 }
 
 .stone {
@@ -40,14 +51,18 @@ h1 {
   border: 1px solid #444;
 }
 
-#turn {
-  margin: 10px;
-  font-weight: bold;
+#reset {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-#resetButton {
-  margin-top: 15px;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
+#reset:hover {
+  background-color: #0056b3;
 }
